@@ -1,0 +1,2 @@
+# CharrySchool
+School Managment System
