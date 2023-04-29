@@ -1,0 +1,1 @@
+﻿EXEC sp_RENAME   'tbl_Users.nDesig_id' , 'nDesg_id','COLUMN';

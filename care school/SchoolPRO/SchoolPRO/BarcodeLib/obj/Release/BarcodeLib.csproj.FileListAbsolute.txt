@@ -1,0 +1,19 @@
+C:\Users\Bilal\documents\visual studio 2012\Projects\BarcodeLib\bin\Release\BarcodeLib.dll
+C:\Users\Bilal\documents\visual studio 2012\Projects\BarcodeLib\bin\Release\BarcodeLib.pdb
+C:\Users\Bilal\documents\visual studio 2012\Projects\BarcodeLib\obj\Release\BarcodeLib.csprojResolveAssemblyReference.cache
+C:\Users\Bilal\documents\visual studio 2012\Projects\BarcodeLib\obj\Release\BarcodeLib.dll
+C:\Users\Bilal\documents\visual studio 2012\Projects\BarcodeLib\obj\Release\BarcodeLib.pdb
+E:\.net projects\inventory complete amir b\BarcodeLib\bin\Release\BarcodeLib.dll
+E:\.net projects\inventory complete amir b\BarcodeLib\bin\Release\BarcodeLib.pdb
+E:\.net projects\inventory complete amir b\BarcodeLib\obj\Release\BarcodeLib.csprojResolveAssemblyReference.cache
+E:\.net projects\inventory complete amir b\BarcodeLib\obj\Release\BarcodeLib.dll
+E:\.net projects\inventory complete amir b\BarcodeLib\obj\Release\BarcodeLib.pdb
+C:\Users\haris\Desktop\Amir Bhai\inventory complete amir b\BarcodeLib\bin\Release\BarcodeLib.dll
+C:\Users\haris\Desktop\Amir Bhai\inventory complete amir b\BarcodeLib\bin\Release\BarcodeLib.pdb
+C:\Users\haris\Desktop\Amir Bhai\inventory complete amir b\BarcodeLib\obj\Release\BarcodeLib.csprojResolveAssemblyReference.cache
+C:\Users\haris\Desktop\Amir Bhai\inventory complete amir b\BarcodeLib\obj\Release\BarcodeLib.dll
+C:\Users\haris\Desktop\Amir Bhai\inventory complete amir b\BarcodeLib\obj\Release\BarcodeLib.pdb
+C:\Users\haris\Desktop\New folder (3)\Neww\inventory complete amir b\BarcodeLib\bin\Release\BarcodeLib.dll
+C:\Users\haris\Desktop\New folder (3)\Neww\inventory complete amir b\BarcodeLib\bin\Release\BarcodeLib.pdb
+C:\Users\haris\Desktop\New folder (3)\Neww\inventory complete amir b\BarcodeLib\obj\Release\BarcodeLib.dll
+C:\Users\haris\Desktop\New folder (3)\Neww\inventory complete amir b\BarcodeLib\obj\Release\BarcodeLib.pdb

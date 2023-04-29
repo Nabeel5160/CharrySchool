@@ -1,0 +1,572 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="SchoolPRO.Admin" %>
+
+<%@ Import Namespace="SchoolPRO" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <title>Admin Dashboard - School Admin</title>
+    <meta name="description" content="overview &amp; stats" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- basic styles -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" media="all" />
+    <!--[if IE 7]>
+		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+    <!-- page specific plugin styles -->
+    <!-- fonts -->
+    <link href="assets/google_fonts.css" rel="stylesheet" media="all" />
+
+    <!-- ace styles -->
+    <link rel="stylesheet" href="assets/css/ace.min.css" media="all" />
+    <link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+
+    <link href="assets/ajax_datatable.css" rel="stylesheet" />
+    <script src="assets/js/ace-extra.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <link rel="stylesheet" href="assets/css/loader.css" />
+    <!--[if lte IE 8]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+    <!-- inline styles related to this page -->
+    <!-- ace settings handler -->
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+    <script src="assets/js/jquery-1.8.2.min.js"></script>
+    <script src="assets/jquery.dataTables.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" enctype="multipart/form-data" runat="server">
+        <div class="navbar navbar-default" id="navbar">
+            <div class="navbar navbar-default" id="Div1">
+                <script type="text/javascript">
+                    try { ace.settings.check('navbar', 'fixed') } catch (e) { }
+                </script>
+                <div class="navbar-container" id="navbar-container">
+                    <div class="navbar-header pull-left">
+                        <a href="AdminDashBoard.aspx" class="navbar-brand"><small>LENOX SCHOOL SOLUTION </small></a>
+                        <!-- /.brand -->
+                    </div>
+               </div>
+                <!-- /.navbar-header -->
+                <%
+                    Boolean msgflag = false;
+                    Boolean eventflag = false;
+
+                    System.Data.SqlClient.SqlConnection con2 = new System.Data.SqlClient.SqlConnection(ConfigurationManager.ConnectionStrings["SchoolPro"].ToString());
+                    System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+                    System.Data.SqlClient.SqlDataReader dr;
+
+                    string query = "SELECT nevent_id,strtitle,strDesc,dtStartDate,dtEndDate from tbl_Event where bisActive=1 and bisDeleted=0 and nsch_id='" + Session["nschoolid"] + "'";
+                    cmd.Connection = con2;
+                    con2.Open();
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+
+                    List<enrollment> tempList = null;
+
+                    using (con2)
+                    {
+                        dr = cmd.ExecuteReader();
+                        if (dr.HasRows)
+                        {
+                            tempList = new List<enrollment>();
+                            while (dr.Read())
+                            {
+                                eventflag = true;
+                                enrollment c = new enrollment();
+                                //c.id = dr["nevent_id"].ToString();
+                                c.stnum = dr["strtitle"].ToString();
+                                // c.vnum = dr["strDesc"].ToString();
+                                // c.fee = dr["dtStartDate"].ToString();
+                                c.amount = dr["dtEndDate"].ToString();
+
+
+                                tempList.Add(c);
+                            }
+                            tempList.TrimExcess();
+                            con2.Close();
+
+                        }
+                    }
+
+                    System.Data.SqlClient.SqlConnection con3 = new System.Data.SqlClient.SqlConnection(ConfigurationManager.ConnectionStrings["SchoolPro"].ToString());
+                    System.Data.SqlClient.SqlCommand cmd3 = new System.Data.SqlClient.SqlCommand();
+                    System.Data.SqlClient.SqlDataReader dr3;
+                    string a = Session["uid"].ToString();
+                    query = "SELECT msg.nMsg_id,msg.strMsgTitle,LEFT(msg.strMsgDesc,30) as msgss,u.strfname+' '+u.strlname as name , u.nlevel,msg.nU_sndr_id,msg.dtAddDate from tbl_Message msg inner Join tbl_Users u on msg.nU_sndr_id=u.nu_id where msg.bisRead=0 and msg.bisDeleted=0 and msg.nU_rcv_id='" + a + "' and msg.nsch_id='" + Session["nschoolid"] + "'";
+                    cmd3.Connection = con3;
+                    con3.Open();
+                    cmd3.CommandType = System.Data.CommandType.Text;
+                    cmd3.CommandText = query;
+
+                    List<enrollment> tempList2 = null;
+
+                    using (con3)
+                    {
+                        dr3 = cmd3.ExecuteReader();
+                        if (dr3.HasRows)
+                        {
+                            tempList2 = new List<enrollment>();
+                            while (dr3.Read())
+                            {
+                                msgflag = true;
+                                enrollment c = new enrollment();
+                                c.id = dr3["nMsg_id"].ToString();
+
+                                c.stnum = dr3["name"].ToString();
+                                Session["Aname"] = c.stnum;
+                                // c.vnum = dr["strDesc"].ToString();
+                                // c.fee = dr["dtStartDate"].ToString();
+                                c.amount = dr3["msgss"].ToString();
+
+                                c.fee = dr3["nlevel"].ToString();
+
+                                c.date = dr3["dtAddDate"].ToString();
+                                tempList2.Add(c);
+                            }
+                            tempList2.TrimExcess();
+                            con3.Close();
+
+                        }
+                    }  
+                %>
+
+                <div class="navbar-header pull-right" role="navigation">
+                    <ul class="nav ace-nav">
+             
+                        <li class="grey"><a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="icon-tasks"></i><span class="badge badge-grey">4</span> </a>
+                            <ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+                                <li class="dropdown-header"><i class="icon-ok"></i>4 Tasks to complete </li>
+                                <li><a href="#">
+                                    <div class="clearfix"><span class="pull-left">Employee Update</span> <span class="pull-right">65%</span> </div>
+                                    <div class="progress progress-mini ">
+                                        <div style="width: 65%" class="progress-bar "></div>
+                                    </div>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="clearfix"><span class="pull-left">Staff Upgrade</span> <span class="pull-right">35%</span> </div>
+                                    <div class="progress progress-mini ">
+                                        <div style="width: 35%" class="progress-bar progress-bar-danger"></div>
+                                    </div>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="clearfix"><span class="pull-left">Exam Scheduling</span> <span class="pull-right">15%</span> </div>
+                                    <div class="progress progress-mini ">
+                                        <div style="width: 15%" class="progress-bar progress-bar-warning"></div>
+                                    </div>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="clearfix"><span class="pull-left">Salary Paid</span> <span class="pull-right">90%</span> </div>
+                                    <div class="progress progress-mini progress-striped active">
+                                        <div style="width: 90%" class="progress-bar progress-bar-success"></div>
+                                    </div>
+                                </a></li>
+                                <li><a href="#">See tasks with details <i class="icon-arrow-right"></i></a></li>
+                            </ul>
+                        </li>
+                        <ul class="pull-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
+                            <li class="dropdown-header"><i class="icon-warning-sign"></i>
+                                <asp:Label ID="Label1" runat="server" Text="0"></asp:Label>
+                                Notifications </li>
+                            <%--<li> <a href="#">
+              <div class="clearfix"> <span class="pull-left"> <i class="btn btn-xs no-hover btn-pink icon-comment"></i> New Message </span> <span class="pull-right badge badge-info">+12</span> </div>
+              </a> </li>--%>
+                            <% 
+                                try
+                                {
+                                    if (eventflag)
+                                    {
+                                        foreach (var c in tempList)
+                                        {
+                            %>
+                            <li><a href="AdminManageEvent.aspx"><i class="btn btn-xs btn-primary icon-user"></i><%txtevent_date.Text = c.stnum + "--" + c.amount; %><asp:Label ID="txtevent_date" runat="server"></asp:Label>
+                            </a></li>
+
+                            <%}
+                                    }
+                                }
+                                catch (Exception ex)
+                                {
+                                    Response.Redirect("Error.aspx");
+                                }
+                            %>
+                            <li><a href="AdminManageEvent.aspx">See all notifications <i class="icon-arrow-right"></i></a></li>
+                        </ul>
+                        <li class="purple"><a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="icon-bell-alt icon-animated-bell"></i><span class="badge badge-important">
+                            <asp:Label ID="txtEventNotify" runat="server" Text="0"></asp:Label></span> </a>
+                            <ul class="pull-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
+                                <li class="dropdown-header"><i class="icon-warning-sign"></i>
+                                    <asp:Label ID="txtEventNotify2" runat="server" Text="0"></asp:Label>
+                                    Notifications </li>
+                                <%--<li> <a href="#">
+              <div class="clearfix"> <span class="pull-left"> <i class="btn btn-xs no-hover btn-pink icon-comment"></i> New Message </span> <span class="pull-right badge badge-info">+12</span> </div>
+              </a> </li>--%>
+                                <% 
+                                    try
+                                    {
+                                        if (eventflag)
+                                        {
+                                            foreach (var c in tempList)
+                                            {
+                                %>
+                                <li><a href="AdminManageEvent.aspx"><i class="btn btn-xs btn-primary icon-user"></i><%txtevent_date.Text = c.stnum + "--" + c.amount; %><asp:Label ID="Label2" runat="server"></asp:Label>
+                                </a></li>
+
+                                <%
+                                            }
+                                        }
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        Response.Redirect("Error.aspx");
+                                    }
+                                %>
+                                <li><a href="AdminManageEvent.aspx">See all notifications <i class="icon-arrow-right"></i></a></li>
+                            </ul>
+                        </li>
+                        <%--  <li class="green"><a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="icon-envelope icon-animated-vertical"></i><span class="badge badge-success"></span></a>
+                            <ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">--%>
+                        <%--<li class="dropdown-header"><i class="icon-envelope-alt"></i>5 Messages </li>--%>
+                        <%-- <li><a href="#">
+                                    <img src="assets/avatars/avatar2.png" class="msg-photo" alt="Alex's Avatar" />
+                                    <span class="msg-body"><span class="msg-title"><span class="blue">Zubair:</span> Hello hope you are fine ... </span><span class="msg-time"><i class="icon-time"></i><span>a moment ago</span> </span></span></a></li>
+                                <li><a href="#">
+                                    <img src="assets/avatars/avatar2.png" class="msg-photo" alt="Susan's Avatar" />
+                                    <span class="msg-body"><span class="msg-title"><span class="blue">Taimorr:</span> Task completed... </span><span class="msg-time"><i class="icon-time"></i><span>20 minutes ago</span> </span></span></a></li>
+                                <li><a href="#">
+                                    <img src="assets/avatars/avatar2.png" class="msg-photo" alt="Bob's Avatar" />
+                                    <span class="msg-body"><span class="msg-title"><span class="blue">Rubab:</span> Pleas check Documents... </span><span class="msg-time"><i class="icon-time"></i><span>3:15 pm</span> </span></span></a></li>--%>
+                        <%--<li><a href="inbox.html">See all messages <i class="icon-arrow-right"></i></a></li>--%>
+                        <%--</ul>
+                        </li>--%>
+                        <li class="green"><a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="icon-envelope icon-animated-vertical"></i><span class="badge badge-success">
+                            <asp:Label ID="txtMsgCount" runat="server" Text="0"></asp:Label></span> </a>
+                            <ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+                                <li class="dropdown-header"><i class="icon-envelope-alt"></i>
+                                    <asp:Label ID="txtMsgCount1" runat="server" Text="0"></asp:Label>
+                                    Messages </li>
+                                <% if (msgflag)
+                                   {
+                                       try
+                                       {
+
+                                           foreach (var c in tempList2)
+                                           {
+                                               // Session["msgid"] = c.id;
+                                %>
+                                <li>
+                                    <a href="AdminViewMessage.aspx?ms=<%Response.Write(c.id);%>">
+                                        <%  //asb.HRef = "TeacherViewMessage.aspx?ms=" + c.id; 
+                                                                        if (c.fee == "3")
+                                                                        {
+                                        %>
+                                        <img src="Uploaded-Files/TransParentDayLogo.jpg" class="msg-photo" alt="Susan's Avatar" />
+                                        <%
+                                                                        }
+                                                                        if (c.fee == "2")
+                                                                        {
+                                        %>
+                                        <img src="Uploaded-Files/teacher.jpg" class="msg-photo" alt="Susan's Avatar" />
+                                        <%
+                                                                        } 
+                                        %>
+                                        <span class="msg-body"><span class="msg-title"><span class="blue"><%txtMsg2.Text = c.stnum + "\n"; %><asp:Label ID="txtMsg2" runat="server"></asp:Label></span><%txtMsg1.Text = c.amount; %><asp:Label ID="txtMsg1" runat="server"></asp:Label>
+                                            ... </span><span class="msg-time"><i class="icon-time"></i><span><% 
+                                                                                                                                                                                                         DateTime dt = DateTime.ParseExact(c.date, "dd-MM-yyyy", System.Globalization.CultureInfo.InvariantCulture);
+                                                                                                                                                                                                         string dat = dt.DayOfWeek.ToString();
+                                                                                                                                                                                                         datee.Text = dat; %>
+                                                <asp:Label ID="datee" runat="server"></asp:Label></span> </span></span>
+
+                                    </a></li>
+
+                                <%
+                                           }
+
+                                       }
+                                       catch (Exception ex)
+                                       {
+                                           Response.Redirect("Error.aspx");
+                                       }
+                                   }
+                                %>
+                                <li><a href="AdminViewMessage.aspx?ms=0">See all messages <i class="icon-arrow-right"></i></a></li>
+                            </ul>
+                        </li>
+                        <li class="light-blue"><a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                            <img class="nav-user-photo" src="assets/avatars/avatar2.png" alt="Admin's Photo" />
+                            <span class="user-info"><small>Welcome,</small>
+                                <asp:Label ID="lblnm" runat="server" Text="Admin"></asp:Label>
+                            </span><i class="icon-caret-down"></i></a>
+                            <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                                <li><a href="AdminProfile.aspx"><i class="icon-user"></i>Profile </a></li>
+
+                                <li><a href="AdminChangePassword.aspx"><i class="icon-user"></i>Change Password </a></li>
+                                <li class="divider"></li>
+                                <li><a href="logout.aspx"><i class="icon-off"></i>Logout </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- /.ace-nav -->
+                </div>
+                <!-- /.navbar-header -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <div class="main-container" id="main-container">
+            <script type="text/javascript">
+                try { ace.settings.check('main-container', 'fixed') } catch (e) { }
+            </script>
+            <div class="main-container-inner">
+                <a class="menu-toggler" id="menu-toggler" href="#"><span class="menu-text"></span></a>
+                <div class="sidebar" id="sidebar">
+                    <script type="text/javascript">
+                        try { ace.settings.check('sidebar', 'fixed') } catch (e) { }
+                    </script>
+
+                    <ul class="nav nav-list">
+                        <li><a href="AdminDashBoard.aspx"><i class="icon-dashboard"></i><span class="menu-text">Dashboard </span></a></li>
+
+                        <li><a href="AdminManageSettings.aspx"><i class="icon-list"></i><span class="menu-text">Settings</span></a>
+
+                        </li>
+
+                        <li><a href="#" class="dropdown-toggle"><i class="icon-list"></i><span class="menu-text">Human Resource</span><b class="arrow icon-angle-down"></b></a>
+                            <ul class="submenu">
+                                <li><a href="AdminManageTeacherDepartment.aspx"><i class="icon-double-angle-right"></i>Manage Teacher Department </a></li>
+                                <li><a href="AdminManageDesignation.aspx"><i class="icon-double-angle-right"></i>Manage Designation </a></li>
+                                <li><a href="AdminAddTeacher.aspx"><i class="icon-double-angle-right"></i>Teacher Management </a></li>
+                                <li><a href="AdminManageEmployees.aspx" class="dropdown-toggle"><i class="icon-pencil"></i>Employee Management</a></li>
+                                <li><a href="AdminUpgradeTeacherDesignation.aspx"><i class="icon-double-angle-right"></i>Upgrade Designation </a></li>
+                                <li><a href="AdminRateTeacher.aspx"><i class="icon-double-angle-right"></i>Admin Rate Teacher </a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#" class="dropdown-toggle"><i class="icon-list"></i>Student Details<b class="arrow icon-angle-down"></b></a>
+                            <ul class="submenu">
+                                <li><a href="AdminManageNewAdmissionMarks.aspx"><i class="icon-leaf"></i>Admission Test</a></li>
+                                <li><a href="AdminManageAdmissionResult.aspx"><i class="icon-leaf"></i>Admission Result</a></li>
+                                <li><a href="AdminManageP-C.aspx"><i class="icon-list"></i><span class="menu-text">Old Admissions </span></a></li>
+                                <li><a href="AdminManageNewAdmission.aspx"><i class="icon-list"></i><span class="menu-text">New Admissions </span></a></li>
+                                <li><a href="AdminVerifyStudent.aspx"><i class="icon-list"></i><span class="menu-text">Verify Admissions </span></a></li>
+                                <li><a href="AdminViewStudentDetail.aspx"><i class="icon-desktop"></i><span class="menu-text">View Students </span></a></li>
+                                <li><a href="PromoteStudent.aspx"><i class="icon-double-angle-right"></i>Promote Students </a></li>
+                                <li><a href="TransferStudent.aspx"><i class="icon-double-angle-right"></i>Interchange Section </a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#" class="dropdown-toggle"><i class="icon-list"></i><span class="menu-text">Attendance</span><b class="arrow icon-angle-down"></b></a>
+                            <ul class="submenu">
+                                <li><a href="AdminStudentAttendance.aspx"><i class="icon-double-angle-right"></i>Student Attendance  </a></li>
+                                <li><a href="AdminConfirmAttendance.aspx"><i class="icon-double-angle-right"></i>Teachers Attendance  </a></li>
+                                <li><a href="AdminConfrimEmployeeAttendance.aspx"><i class="icon-double-angle-right"></i>Employee Attendance  </a></li>
+                                <li><a href="AdminConformCancelTeacherLeave.aspx"><i class="icon-double-angle-right"></i>Admin View Teacher Leave </a></li>
+                                <li><a href="AdminMarkLeave.aspx"><i class="icon-double-angle-right"></i>Admin Mark Leave </a></li>
+                                <li><a href="AdminConformAdminLeave.aspx"><i class="icon-double-angle-right"></i>Admin View Admin Leave </a></li>
+                                <li><a href="AdminStudentAttendanceReport.aspx"><i class="icon-double-angle-right"></i>Student Attendance Report </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="dropdown-toggle"><i class="icon-dollar"></i>Finance <b class="arrow icon-angle-down"></b></a>
+                            <ul class="submenu">
+                                <li><a href="AdminManageEmployeeSalary.aspx" class="dropdown-toggle"><i class="icon-pencil"></i>Employee Salary</a></li>
+                                <li><a href="AdminManageLoans.aspx" class="dropdown-toggle"><i class="icon-pencil"></i>Loan</a></li>
+                                <li><a href="AdminManageSalary.aspx" class="dropdown-toggle"><i class="icon-pencil"></i>Teacher Salary</a></li>
+                                <li><a href="AdminManageBoardFee.aspx"><i class="icon-leaf"></i>Manage Board Fee </a></li>
+                                <li><a href="AdminStudentFee.aspx"><i class="icon-leaf"></i>Receive Fees </a></li>
+                                <li><a href="AdminAssignConcessionToStudent.aspx"><i class="icon-leaf"></i>Assign Concession To Student </a></li>
+                                <li><a href="AdminBankAccount.aspx" class="dropdown-toggle"><i class="icon-pencil"></i>Bank</a></li>
+                                <li><a href="AdminTransferAmount.aspx" class="dropdown-toggle"><i class="icon-pencil"></i>Transactions </a></li>
+                                <li><a href="AdminManageExpense.aspx" class="dropdown-toggle"><i class="icon-pencil"></i>Expenses </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="dropdown-toggle"><i class="icon-edit"></i><span class="menu-text">Timetable  </span><b class="arrow icon-angle-down"></b></a>
+                            <ul class="submenu">
+                                <li><a href="AdminManageSchedule.aspx"><i class="icon-double-angle-right"></i>Manage Schedule </a></li>
+                                <li><a href="AdminManageClassTimeTable.aspx"><i class="icon-double-angle-right"></i>Class Time-Table </a></li>
+                                <li><a href="AdminManageExamTimeTable.aspx"><i class="icon-double-angle-right"></i>Exam Time-Table</a> </li>
+                                <li><a href="AdminManagePeriod.aspx"><i class="icon-double-angle-right"></i>Manage Period </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle"><i class="icon-list"></i>Transportation <b class="arrow icon-angle-down"></b></a>
+                            <ul class="submenu">
+                                <li><a href="AdminSetRoutes.aspx"><i class="icon-leaf"></i>Set Routes</a> </li>
+                                <li><a href="AdminManageVehicle.aspx" class="dropdown-toggle"><i class="icon-pencil"></i>Vehicles</a></li>
+                                <li><a href="AdminAlloteTransport.aspx" class="dropdown-toggle"><i class="icon-pencil"></i>Transport Allotment </a></li>
+                                <li><a href="AdminTransportRoutesReport.aspx"><i class="icon-leaf"></i>Transport Routes Report</a> </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="dropdown-toggle"><i class="icon-list"></i>Examination <b class="arrow icon-angle-down"></b></a>
+                            <ul class="submenu">
+                                <li><a href="AdminSetPercentage.aspx"><i class="icon-double-angle-right"></i>Manage Exam Passing Percentage </a></li>
+                                <li><a href="AdminManageExamType.aspx"><i class="icon-double-angle-right"></i>Manage Exam Type </a></li>
+                                <li><a href="AdminManageResultDecalaration.aspx"><i class="icon-double-angle-right"></i>Manage Result Declaration Date </a></li>
+                                <li><a href="AdminManageQuizType.aspx"><i class="icon-double-angle-right"></i>Manage Quiz Type </a></li>
+                                <li><a href="AdminExaminationResult.aspx"><i class="icon-double-angle-right"></i>Examination Result</a></li>
+                                <li><a href="AdminQuizResult.aspx"><i class="icon-double-angle-right"></i>Quiz Result</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li><a href="AdminManageEvent.aspx"><i class="icon-bell"></i><span class="menu-text">Manage Events</span></a></li>
+                        <li><a href="#" class="dropdown-toggle"><i class="icon-list"></i>School Assets<b class="arrow icon-angle-down"></b></a>
+                            <ul class="submenu">
+                                <li><a href="AdminManageDepartment.aspx"><i class="icon-leaf"></i>Manage Department </a></li>
+                                <li><a href="AdminManageCategory.aspx" class="dropdown-toggle"><i class="icon-pencil"></i>Manage Category</a></li>
+                                <li><a href="AdminManageItem.aspx" class="dropdown-toggle"><i class="icon-pencil"></i>Manage Items</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <li><a href="#" class="dropdown-toggle"><i class="icon-dollar"></i>SMS And Email <b class="arrow icon-angle-down"></b></a>
+                            <ul class="submenu">
+                                <li><a href="AdminInbox.aspx"><i class="icon-calendar"></i><span class="menu-text">Inbox </span></a></li>
+                                <li><a href="Adminsmstemplates.aspx"><i class="icon-calendar"></i><span class="menu-text">SMS Template </span></a></li>
+                                <li><a href="AdminSendMsgz.aspx"><i class="icon-calendar"></i><span class="menu-text">Messages </span></a></li>
+
+
+                            </ul>
+                        </li>
+
+
+                        <li><a href="#" class="dropdown-toggle"><i class="icon-list"></i><span class="menu-text">Visitors  </span><b class="arrow icon-angle-down"></b></a>
+                            <ul class="submenu">
+                                <li><a href="AdminManageVisitors.aspx"><i class="icon-double-angle-right"></i>Manage Visitors</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="AdminManageReports.aspx"><i class="icon-calendar"></i><span class="menu-text">Reports </span></a></li>
+
+                        <li><a href="#" class="dropdown-toggle"><i class="icon-tag"></i><span class="menu-text">More</span> <b class="arrow icon-angle-down"></b></a>
+
+                            <ul class="submenu">
+                                <li><a href="AdminStudentLeavingCert.aspx"><i class="icon-double-angle-right"></i>Leaving Certificate</a></li>
+                                <li><a href="AdminStrucOffStudent.aspx"><i class="icon-double-angle-right"></i>Struck Off </a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- /.nav-list -->
+                    <div class="sidebar-collapse" id="sidebar-collapse"><i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i></div>
+                    <script type="text/javascript">
+                        try { ace.settings.check('sidebar', 'collapsed') } catch (e) { }
+                    </script>
+                </div>
+                <div class="main-content">
+
+
+                    <div class="breadcrumbs" id="breadcrumbs">
+                        <script type="text/javascript">
+                            try { ace.settings.check('breadcrumbs', 'fixed') } catch (e) { }
+                        </script>
+                        <ul class="breadcrumb">
+                            <asp:Panel runat="server" ID="showsuperadmin">
+                                <li>
+                                    <h4>
+                                        <a href="SuperAdmin/Farmecole.aspx">
+                                            <asp:Label ID="Label3" Text="Go Back to ADMIN PANEL" runat="server" /></a></h4>
+                                </li>
+                            </asp:Panel>
+                            <li><i class="icon-home home-icon"></i><a href="AdminDashBoard.aspx">Home</a> </li>
+                            <li><i class="icon-dashboard"></i>Dashboard</li>
+                            <li><a href="AdminHelp.aspx">Help</a> </li>
+                        </ul>
+                        <!-- .breadcrumb -->
+
+                        <!-- #nav-search -->
+                    </div>
+                    <div class="page-content">
+                             <pre><marquee>Disclaimer:Data of This Application is Just For Testing and Demostration Purpose Not Related to Any One</marquee></pre>
+
+
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+
+
+                           
+                    </div>
+                    <!-- /.page-content -->
+                            
+                </div>
+                <!-- /.main-content -->
+           
+            </div>
+            <!-- /.main-container-inner -->
+            <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse"><i class="icon-double-angle-up icon-only bigger-110"></i></a>
+        </div>
+    </form>
+    <!-- /.main-container -->
+    <!-- basic scripts -->
+    <!--[if !IE]> -->
+    <!-- <![endif]-->
+    <!--[if IE]>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <![endif]-->
+    <!--[if !IE]> -->
+
+    <script type="text/javascript">
+        window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
+    </script>
+
+    <!-- <![endif]-->
+    <!--[if IE]>
+<script type="text/javascript">
+ window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+    <script type="text/javascript">
+        if ("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+    </script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/typeahead-bs2.min.js"></script>
+    <!-- page specific plugin scripts -->
+    <!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+    <script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+    <!-- ace scripts -->
+    <script src="assets/js/ace-elements.min.js"></script>
+    <script src="assets/js/ace.min.js"></script>
+
+
+
+
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script src="assets/js/jquery.gritter.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $('gritter-center').load(function () {
+                $.gritter.add({
+                    title: 'WELCOME ..!!',
+                    text: 'This is your Dashboard',
+                    class_name: 'gritter-info gritter-center' + (!$('#gritter-light').get(0).checked ? ' gritter-light' : '')
+                });
+
+                return false;
+            });
+
+        });
+
+    </script>
+</body>
+</html>

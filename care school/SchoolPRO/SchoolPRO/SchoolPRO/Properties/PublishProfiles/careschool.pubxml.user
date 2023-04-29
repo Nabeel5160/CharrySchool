@@ -1,0 +1,1571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Admin.Master">
+      <publishTime>05/15/2017 14:59:18</publishTime>
+    </File>
+    <File Include="AdminAddExamMarks.aspx">
+      <publishTime>02/06/2017 00:55:39</publishTime>
+    </File>
+    <File Include="AdminAddTeacher.aspx">
+      <publishTime>02/14/2017 13:08:46</publishTime>
+    </File>
+    <File Include="AdminAlloteTransport.aspx">
+      <publishTime>09/03/2015 17:00:58</publishTime>
+    </File>
+    <File Include="AdminAssignConcessionToStudent.aspx">
+      <publishTime>02/23/2017 13:30:37</publishTime>
+    </File>
+    <File Include="AdminAttendance.aspx">
+      <publishTime>03/13/2015 17:49:14</publishTime>
+    </File>
+    <File Include="AdminBankAccount.aspx">
+      <publishTime>09/03/2015 16:42:30</publishTime>
+    </File>
+    <File Include="AdminBankReport.aspx">
+      <publishTime>05/08/2015 12:05:34</publishTime>
+    </File>
+    <File Include="AdminChallanTerms.aspx">
+      <publishTime>03/16/2016 20:02:34</publishTime>
+    </File>
+    <File Include="AdminChangePassword.aspx">
+      <publishTime>05/08/2015 12:05:28</publishTime>
+    </File>
+    <File Include="AdminClassFeeReport.aspx">
+      <publishTime>05/08/2015 12:05:22</publishTime>
+    </File>
+    <File Include="AdminClassStrengthReport.aspx">
+      <publishTime>04/08/2017 17:39:20</publishTime>
+    </File>
+    <File Include="AdminConfirmAttendance.aspx">
+      <publishTime>09/03/2015 17:26:28</publishTime>
+    </File>
+    <File Include="AdminConformAdminLeave.aspx">
+      <publishTime>05/08/2015 12:01:48</publishTime>
+    </File>
+    <File Include="AdminConformCancelTeacherLeave.aspx">
+      <publishTime>05/08/2015 12:01:40</publishTime>
+    </File>
+    <File Include="AdminConfrimEmployeeAttendance.aspx">
+      <publishTime>05/08/2015 12:01:28</publishTime>
+    </File>
+    <File Include="AdminDailyDiary.aspx">
+      <publishTime>02/03/2017 16:17:54</publishTime>
+    </File>
+    <File Include="AdminDashBoard.aspx">
+      <publishTime>02/06/2017 14:08:53</publishTime>
+    </File>
+    <File Include="AdminDeflauterStudentsReport.aspx">
+      <publishTime>05/08/2015 12:01:16</publishTime>
+    </File>
+    <File Include="AdminDirectFeeChallanForm.aspx">
+      <publishTime>09/12/2015 15:42:22</publishTime>
+    </File>
+    <File Include="AdminDirectRecievingFee.aspx">
+      <publishTime>06/10/2016 14:56:04</publishTime>
+    </File>
+    <File Include="AdminDirectRecvAdmissionFee.aspx">
+      <publishTime>05/05/2017 13:12:49</publishTime>
+    </File>
+    <File Include="AdminDirectRecvBoardFee.aspx">
+      <publishTime>03/17/2016 15:53:02</publishTime>
+    </File>
+    <File Include="AdminDuplicateChalanForm.aspx">
+      <publishTime>05/15/2017 15:07:07</publishTime>
+    </File>
+    <File Include="AdminEditStudentPic.aspx">
+      <publishTime>08/27/2015 13:47:14</publishTime>
+    </File>
+    <File Include="AdminEmployeeReport.aspx">
+      <publishTime>05/08/2015 12:08:52</publishTime>
+    </File>
+    <File Include="AdminEnrollStudents.aspx">
+      <publishTime>05/08/2015 12:09:02</publishTime>
+    </File>
+    <File Include="AdminExaminationResult.aspx">
+      <publishTime>11/03/2015 17:13:02</publishTime>
+    </File>
+    <File Include="AdminExpenseReport.aspx">
+      <publishTime>05/08/2015 12:09:20</publishTime>
+    </File>
+    <File Include="AdminFeeSlipsReport.aspx">
+      <publishTime>04/08/2017 17:38:47</publishTime>
+    </File>
+    <File Include="AdminFinance.aspx">
+      <publishTime>09/03/2014 12:50:58</publishTime>
+    </File>
+    <File Include="AdminFullResultReport.aspx">
+      <publishTime>11/09/2015 22:38:58</publishTime>
+    </File>
+    <File Include="AdminHelp.aspx">
+      <publishTime>01/31/2017 20:41:27</publishTime>
+    </File>
+    <File Include="AdminHostelDashboard.aspx">
+      <publishTime>02/20/2015 11:51:02</publishTime>
+    </File>
+    <File Include="AdminInbox.aspx">
+      <publishTime>10/17/2015 13:09:02</publishTime>
+    </File>
+    <File Include="AdminIssueClassFeeChallan.aspx">
+      <publishTime>05/02/2017 13:46:45</publishTime>
+    </File>
+    <File Include="AdminIssueFeeReciept.aspx">
+      <publishTime>05/08/2015 12:10:08</publishTime>
+    </File>
+    <File Include="AdminLibrarianBooks.aspx">
+      <publishTime>05/08/2015 12:10:20</publishTime>
+    </File>
+    <File Include="AdminLibrarianIssueBooks.aspx">
+      <publishTime>05/08/2015 12:10:28</publishTime>
+    </File>
+    <File Include="AdminLibrarianRecieveBooks.aspx">
+      <publishTime>05/08/2015 12:11:00</publishTime>
+    </File>
+    <File Include="AdminLibrarianRecieveBooksReport.aspx">
+      <publishTime>05/08/2015 12:11:08</publishTime>
+    </File>
+    <File Include="AdminLibrary.aspx">
+      <publishTime>05/16/2014 00:07:04</publishTime>
+    </File>
+    <File Include="AdminLibraryDashboard.aspx">
+      <publishTime>12/04/2014 17:50:08</publishTime>
+    </File>
+    <File Include="AdminLibraryManageCategory.aspx">
+      <publishTime>05/08/2015 12:11:24</publishTime>
+    </File>
+    <File Include="AdminManageAdmissionResult.aspx">
+      <publishTime>05/08/2015 12:11:34</publishTime>
+    </File>
+    <File Include="AdminManageAdmissionTime.aspx">
+      <publishTime>05/08/2015 12:11:42</publishTime>
+    </File>
+    <File Include="AdminManageBoardFee.aspx">
+      <publishTime>05/08/2015 12:11:52</publishTime>
+    </File>
+    <File Include="AdminManageCategory.aspx">
+      <publishTime>05/08/2015 12:13:16</publishTime>
+    </File>
+    <File Include="AdminManageClass.aspx">
+      <publishTime>02/10/2017 13:08:13</publishTime>
+    </File>
+    <File Include="AdminManageClassIncharge.aspx">
+      <publishTime>05/13/2015 19:19:40</publishTime>
+    </File>
+    <File Include="AdminManageClassTimeTable.aspx">
+      <publishTime>05/18/2015 15:54:06</publishTime>
+    </File>
+    <File Include="AdminManageConcession.aspx">
+      <publishTime>02/06/2017 03:04:26</publishTime>
+    </File>
+    <File Include="AdminManageDepartment.aspx">
+      <publishTime>05/13/2015 18:43:22</publishTime>
+    </File>
+    <File Include="AdminManageDesignation.aspx">
+      <publishTime>05/13/2015 18:40:46</publishTime>
+    </File>
+    <File Include="AdminManageEmployees.aspx">
+      <publishTime>02/06/2017 14:06:36</publishTime>
+    </File>
+    <File Include="AdminManageEmployeeSalary.aspx">
+      <publishTime>05/14/2015 16:05:06</publishTime>
+    </File>
+    <File Include="AdminManageEvent.aspx">
+      <publishTime>05/08/2015 12:23:28</publishTime>
+    </File>
+    <File Include="AdminManageExamTimeTable.aspx">
+      <publishTime>05/08/2015 12:23:46</publishTime>
+    </File>
+    <File Include="AdminManageExamType.aspx">
+      <publishTime>05/08/2015 12:24:00</publishTime>
+    </File>
+    <File Include="AdminManageExpense.aspx">
+      <publishTime>05/08/2015 12:24:12</publishTime>
+    </File>
+    <File Include="AdminManageFee.aspx">
+      <publishTime>05/08/2015 16:45:56</publishTime>
+    </File>
+    <File Include="AdminManageFeeDueDate.aspx">
+      <publishTime>05/08/2015 12:24:40</publishTime>
+    </File>
+    <File Include="AdminManageItem.aspx">
+      <publishTime>05/08/2015 12:24:56</publishTime>
+    </File>
+    <File Include="AdminManageLoans.aspx">
+      <publishTime>05/08/2015 12:25:10</publishTime>
+    </File>
+    <File Include="AdminManageMessage.aspx">
+      <publishTime>05/08/2015 12:25:22</publishTime>
+    </File>
+    <File Include="AdminManageNewAdmission.aspx">
+      <publishTime>04/15/2017 13:07:25</publishTime>
+    </File>
+    <File Include="AdminManageNewAdmissionMarks.aspx">
+      <publishTime>05/08/2015 12:25:48</publishTime>
+    </File>
+    <File Include="AdminManageOldStudents.aspx">
+      <publishTime>05/08/2015 12:27:08</publishTime>
+    </File>
+    <File Include="AdminManageP-C.aspx">
+      <publishTime>04/13/2017 13:39:27</publishTime>
+    </File>
+    <File Include="AdminManagePeriod.aspx">
+      <publishTime>05/08/2015 12:29:42</publishTime>
+    </File>
+    <File Include="AdminManageQuizType.aspx">
+      <publishTime>05/08/2015 12:30:16</publishTime>
+    </File>
+    <File Include="AdminManageReports.aspx">
+      <publishTime>04/29/2017 15:48:34</publishTime>
+    </File>
+    <File Include="AdminManageResultDecalaration.aspx">
+      <publishTime>01/30/2017 18:39:39</publishTime>
+    </File>
+    <File Include="AdminManageSalary.aspx">
+      <publishTime>09/03/2015 18:35:26</publishTime>
+    </File>
+    <File Include="AdminManageSchedule.aspx">
+      <publishTime>05/18/2015 12:29:52</publishTime>
+    </File>
+    <File Include="AdminManageSchoolLeaving.aspx">
+      <publishTime>05/08/2015 12:32:56</publishTime>
+    </File>
+    <File Include="AdminManageSection.aspx">
+      <publishTime>02/10/2017 13:03:44</publishTime>
+    </File>
+    <File Include="AdminManageSettings.aspx">
+      <publishTime>02/06/2017 14:10:11</publishTime>
+    </File>
+    <File Include="AdminManageSubjects.aspx">
+      <publishTime>05/08/2015 12:33:18</publishTime>
+    </File>
+    <File Include="AdminManageTeacherDepartment.aspx">
+      <publishTime>05/08/2015 12:33:30</publishTime>
+    </File>
+    <File Include="AdminManageTeacherSubject.aspx">
+      <publishTime>05/08/2015 12:33:42</publishTime>
+    </File>
+    <File Include="AdminManageTimeTable.aspx">
+      <publishTime>05/18/2015 12:15:34</publishTime>
+    </File>
+    <File Include="AdminManageUsers.aspx">
+      <publishTime>10/22/2015 13:34:42</publishTime>
+    </File>
+    <File Include="AdminManageVehicle.aspx">
+      <publishTime>05/08/2015 12:36:52</publishTime>
+    </File>
+    <File Include="AdminManageVisitors.aspx">
+      <publishTime>05/08/2015 12:37:08</publishTime>
+    </File>
+    <File Include="AdminMarkLeave.aspx">
+      <publishTime>05/13/2015 18:24:18</publishTime>
+    </File>
+    <File Include="AdminNotify.aspx">
+      <publishTime>05/05/2017 21:45:54</publishTime>
+    </File>
+    <File Include="AdminPayAdmissionFee.aspx">
+      <publishTime>05/08/2015 12:38:18</publishTime>
+    </File>
+    <File Include="AdminPayBoardFee.aspx">
+      <publishTime>05/08/2015 12:38:28</publishTime>
+    </File>
+    <File Include="AdminPayFee.aspx">
+      <publishTime>08/01/2016 13:59:31</publishTime>
+    </File>
+    <File Include="AdminProfile.aspx">
+      <publishTime>05/08/2015 12:38:50</publishTime>
+    </File>
+    <File Include="AdminQuizResult.aspx">
+      <publishTime>05/25/2015 09:58:04</publishTime>
+    </File>
+    <File Include="AdminRateTeacher.aspx">
+      <publishTime>05/08/2015 12:39:14</publishTime>
+    </File>
+    <File Include="AdminReplyMessage.aspx">
+      <publishTime>05/08/2015 12:39:24</publishTime>
+    </File>
+    <File Include="AdminReportConfirmAdmissionSTD.aspx">
+      <publishTime>05/08/2015 12:39:36</publishTime>
+    </File>
+    <File Include="AdminSendMgsToAdmin.aspx">
+      <publishTime>05/08/2015 12:39:48</publishTime>
+    </File>
+    <File Include="AdminSendMgsToTeacher.aspx">
+      <publishTime>05/08/2015 12:39:58</publishTime>
+    </File>
+    <File Include="AdminSendMsgz.aspx">
+      <publishTime>08/26/2015 13:54:10</publishTime>
+    </File>
+    <File Include="AdminSendSMSAll.aspx">
+      <publishTime>05/05/2017 21:45:40</publishTime>
+    </File>
+    <File Include="AdminSendSMSClass.aspx">
+      <publishTime>05/08/2015 12:40:48</publishTime>
+    </File>
+    <File Include="AdminSendSMSToAbscent.aspx">
+      <publishTime>05/08/2015 12:41:42</publishTime>
+    </File>
+    <File Include="AdminSetAttendenceMarking.aspx">
+      <publishTime>12/18/2014 13:39:44</publishTime>
+    </File>
+    <File Include="AdminSetPercentage.aspx">
+      <publishTime>09/12/2015 16:10:34</publishTime>
+    </File>
+    <File Include="AdminSetRoutes.aspx">
+      <publishTime>09/03/2015 16:51:46</publishTime>
+    </File>
+    <File Include="Adminsmstemplates.aspx">
+      <publishTime>02/06/2017 02:02:34</publishTime>
+    </File>
+    <File Include="AdminStrucOffStudent.aspx">
+      <publishTime>07/30/2016 17:25:05</publishTime>
+    </File>
+    <File Include="AdminStudentAttendance.aspx">
+      <publishTime>05/15/2017 14:31:26</publishTime>
+    </File>
+    <File Include="AdminStudentAttendanceReport.aspx">
+      <publishTime>05/08/2015 12:44:50</publishTime>
+    </File>
+    <File Include="AdminStudentFee.aspx">
+      <publishTime>05/10/2016 13:40:16</publishTime>
+    </File>
+    <File Include="AdminStudentLeavingCert.aspx">
+      <publishTime>05/08/2015 12:45:40</publishTime>
+    </File>
+    <File Include="AdminStudentListReport.aspx">
+      <publishTime>04/08/2017 17:33:21</publishTime>
+    </File>
+    <File Include="AdminStudentRateReport.aspx">
+      <publishTime>05/08/2015 12:46:18</publishTime>
+    </File>
+    <File Include="AdminStudentTransfer.aspx">
+      <publishTime>05/08/2015 12:46:32</publishTime>
+    </File>
+    <File Include="AdminSummaryReport.aspx">
+      <publishTime>05/08/2015 12:46:48</publishTime>
+    </File>
+    <File Include="AdminTeacherAttendance.aspx">
+      <publishTime>04/16/2014 12:56:06</publishTime>
+    </File>
+    <File Include="AdminTeacherReport.aspx">
+      <publishTime>05/08/2015 12:47:02</publishTime>
+    </File>
+    <File Include="AdminTransferAmount.aspx">
+      <publishTime>05/08/2015 12:47:12</publishTime>
+    </File>
+    <File Include="AdminTransport.aspx">
+      <publishTime>05/13/2015 12:16:50</publishTime>
+    </File>
+    <File Include="AdminTransportRoutesReport.aspx">
+      <publishTime>05/08/2015 12:47:56</publishTime>
+    </File>
+    <File Include="AdminUpgradeTeacherDesignation.aspx">
+      <publishTime>05/08/2015 12:48:08</publishTime>
+    </File>
+    <File Include="AdminVerifyStudent.aspx">
+      <publishTime>05/25/2015 13:30:04</publishTime>
+    </File>
+    <File Include="AdminViewAbsentStudent.aspx">
+      <publishTime>05/08/2015 12:48:38</publishTime>
+    </File>
+    <File Include="AdminViewAdmissionFeeReport.aspx">
+      <publishTime>05/08/2015 12:49:22</publishTime>
+    </File>
+    <File Include="AdminViewAllMsgReport.aspx">
+      <publishTime>05/08/2015 12:49:38</publishTime>
+    </File>
+    <File Include="AdminViewClassFeeReport.aspx">
+      <publishTime>05/15/2016 15:56:29</publishTime>
+    </File>
+    <File Include="AdminViewClassResultReport.aspx">
+      <publishTime>09/19/2015 01:43:16</publishTime>
+    </File>
+    <File Include="AdminViewClassStudents.aspx">
+      <publishTime>02/12/2017 15:33:40</publishTime>
+    </File>
+    <File Include="AdminViewDeflauterStudents.aspx">
+      <publishTime>09/01/2016 15:41:05</publishTime>
+    </File>
+    <File Include="AdminViewDetailFeeReport.aspx">
+      <publishTime>10/28/2016 15:06:32</publishTime>
+    </File>
+    <File Include="AdminViewFeeConcReport.aspx">
+      <publishTime>09/02/2016 17:49:00</publishTime>
+    </File>
+    <File Include="AdminViewMessage.aspx">
+      <publishTime>05/08/2015 12:52:00</publishTime>
+    </File>
+    <File Include="AdminViewOldStudents.aspx">
+      <publishTime>05/08/2015 12:52:16</publishTime>
+    </File>
+    <File Include="AdminViewPaidFeeStudents.aspx">
+      <publishTime>05/15/2016 14:08:28</publishTime>
+    </File>
+    <File Include="AdminViewProfitLossReport.aspx">
+      <publishTime>05/08/2015 12:52:46</publishTime>
+    </File>
+    <File Include="AdminViewRemainFeeStudents.aspx">
+      <publishTime>06/02/2016 13:26:54</publishTime>
+    </File>
+    <File Include="AdminViewSalaryReport.aspx">
+      <publishTime>05/08/2015 12:53:06</publishTime>
+    </File>
+    <File Include="AdminViewStudentDetail.aspx">
+      <publishTime>05/08/2015 12:53:20</publishTime>
+    </File>
+    <File Include="AdminViewSubmittedFeeReport.aspx">
+      <publishTime>05/08/2015 12:53:34</publishTime>
+    </File>
+    <File Include="AdminViewTeacherSalary.aspx">
+      <publishTime>10/19/2015 11:42:22</publishTime>
+    </File>
+    <File Include="AdminViewTeacherSalaryFeeReport.aspx">
+      <publishTime>05/08/2015 12:54:18</publishTime>
+    </File>
+    <File Include="AdminViewTeacherSalaryHistory.aspx">
+      <publishTime>05/08/2015 12:54:28</publishTime>
+    </File>
+    <File Include="AdminViewTopStudentClass.aspx">
+      <publishTime>05/08/2015 12:54:36</publishTime>
+    </File>
+    <File Include="AllotRoomToStudent.aspx">
+      <publishTime>05/08/2015 12:54:48</publishTime>
+    </File>
+    <File Include="assets/ajax_datatable.css">
+      <publishTime>04/26/2016 21:18:34</publishTime>
+    </File>
+    <File Include="assets/avatars/avatar.png">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/avatars/avatar1.png">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/avatars/avatar2.png">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/avatars/avatar3.png">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/avatars/avatar4.png">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/avatars/avatar5.png">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/avatars/profile-pic.jpg">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/avatars/user.jpg">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/ace-rtl.min.css">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/ace-skins.min.css">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/ace.min.css">
+      <publishTime>09/07/2014 17:05:40</publishTime>
+    </File>
+    <File Include="assets/css/bootstrap-editable.css">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/bootstrap-timepicker.css">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/bootstrap.min.css">
+      <publishTime>11/22/2014 00:29:24</publishTime>
+    </File>
+    <File Include="assets/css/chosen-sprite%402x.png">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/chosen-sprite.png">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/chosen.css">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/colorbox.css">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/colorpicker.css">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/datepicker.css">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/daterangepicker.css">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/dropzone.css">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/font-awesome.min.css">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/fullcalendar.css">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/images/border.png">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/images/controls.png">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/images/loading.gif">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/images/loading_background.png">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/images/overlay.png">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/img/alpha.png">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/img/hue.png">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/img/saturation.png">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/jquery-ui-1.10.3.custom.min.css">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/jquery-ui-1.10.3.full.min.css">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/jquery-ui.css">
+      <publishTime>12/10/2014 18:10:52</publishTime>
+    </File>
+    <File Include="assets/css/jquery-ui.min.js">
+      <publishTime>12/10/2014 18:10:52</publishTime>
+    </File>
+    <File Include="assets/css/jquery.dataTables.css">
+      <publishTime>05/13/2015 17:30:36</publishTime>
+    </File>
+    <File Include="assets/css/jquery.gritter.css">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/jquery.min.js">
+      <publishTime>12/10/2014 18:10:52</publishTime>
+    </File>
+    <File Include="assets/css/loader.css">
+      <publishTime>12/22/2014 17:03:24</publishTime>
+    </File>
+    <File Include="assets/css/prettify.css">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/select2-spinner.gif">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/select2.css">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/select2.png">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/select2x2.png">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/css/ui.jqgrid.css">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/font/fontawesome-webfont.svg">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/font/fontawesome-webfontd41d.eot">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/font/fontawesome-webfontf77b.eot">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/font/fontawesome-webfontf77b.ttf">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/font/fontawesome-webfontf77b.woff">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons-halflings-regular-2.html">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons-halflings-regular-3.html">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons-halflings-regular-4.html">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons-halflings-regular.html">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons-halflings-regulard41d.html">
+      <publishTime>04/06/2014 16:27:56</publishTime>
+    </File>
+    <File Include="assets/google_fonts.css">
+      <publishTime>04/26/2016 21:18:34</publishTime>
+    </File>
+    <File Include="assets/images/attendance_icon.jpg">
+      <publishTime>08/27/2016 15:29:28</publishTime>
+    </File>
+    <File Include="assets/images/emp_add.png">
+      <publishTime>08/27/2016 15:29:28</publishTime>
+    </File>
+    <File Include="assets/images/gallery/1add.jpg">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/attendance.png">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/blog-icon.jpg">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/books.png">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/double_bed.png">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/exams.jpg">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/exams.png">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/finance.jpg">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/hostel.png">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/hr.jpg">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/leaving cert results.png">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/muser.jpg">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/news.png">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/news_icon.jpg">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/pic.png">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/reports.png">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/school bus.png">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/seting.jpg">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/student_details_logo.jpg">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/student_details_logo.png">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/timetable.jpg">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/timetable.png">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gallery/user_profile_logo.jpg">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gritter-light.html">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/gritter.html">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/icon-transfer-lightblue.png">
+      <publishTime>08/27/2016 15:29:28</publishTime>
+    </File>
+    <File Include="assets/images/ie-spacer.html">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/loader.gif">
+      <publishTime>10/14/2016 22:32:53</publishTime>
+    </File>
+    <File Include="assets/images/orderedList9.png">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/payroll.png">
+      <publishTime>08/27/2016 15:29:28</publishTime>
+    </File>
+    <File Include="assets/images/ratingStarEmpty.gif">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/ratingStarFilled.gif">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/ratingStarSaved.gif">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/report.png">
+      <publishTime>08/27/2016 15:29:28</publishTime>
+    </File>
+    <File Include="assets/images/settings-xxl.png">
+      <publishTime>08/27/2016 15:47:35</publishTime>
+    </File>
+    <File Include="assets/images/spritemap%402x.png">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/images/spritemap.png">
+      <publishTime>08/26/2016 23:35:23</publishTime>
+    </File>
+    <File Include="assets/img/arrowdown.png">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/img/arrowup.png">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/img/bop.png">
+      <publishTime>05/02/2016 12:01:50</publishTime>
+    </File>
+    <File Include="assets/img/clear.png">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/img/loading.gif">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/img/sch_logo.jpg">
+      <publishTime>08/16/2016 18:00:48</publishTime>
+    </File>
+    <File Include="assets/jquery.dataTables.min.js">
+      <publishTime>04/26/2016 21:18:34</publishTime>
+    </File>
+    <File Include="assets/js/ace-elements.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/ace-extra.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/ace.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/additional-methods.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/bootbox.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/bootstrap-colorpicker.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/bootstrap-tag.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/bootstrap-wysiwyg.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/bootstrap.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/chosen.jquery.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/date-time/bootstrap-datepicker.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/date-time/bootstrap-timepicker.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/date-time/daterangepicker.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/date-time/moment.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/dropzone.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/flot/jquery.flot.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/flot/jquery.flot.pie.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/flot/jquery.flot.resize.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/fuelux/data/fuelux.tree-sampledata.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/fuelux/fuelux.spinner.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/fuelux/fuelux.tree.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/fuelux/fuelux.wizard.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/fullcalendar.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jqGrid/i18n/grid.locale-en.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jqGrid/jquery.jqGrid.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery-1.10.2.js">
+      <publishTime>12/10/2014 18:35:20</publishTime>
+    </File>
+    <File Include="assets/js/jquery-1.8.2.min.js">
+      <publishTime>05/13/2015 17:34:56</publishTime>
+    </File>
+    <File Include="assets/js/jquery-2.0.3.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery-ui-1.10.3.custom.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery-ui-1.10.3.full.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery-ui.js">
+      <publishTime>12/10/2014 18:37:22</publishTime>
+    </File>
+    <File Include="assets/js/jquery.autosize.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery.colorbox-min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery.dataTables.bootstrap.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery.dataTables.min.js">
+      <publishTime>05/13/2015 17:34:56</publishTime>
+    </File>
+    <File Include="assets/js/jquery.easy-pie-chart.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery.gritter.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery.hotkeys.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery.inputlimiter.1.3.1.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery.knob.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery.maskedinput.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery.min.js">
+      <publishTime>12/22/2014 16:22:14</publishTime>
+    </File>
+    <File Include="assets/js/jquery.mobile.custom.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery.nestable.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery.slimscroll.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery.sparkline.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery.ui.touch-punch.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/jquery.validate.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/loader.js">
+      <publishTime>12/22/2014 16:52:46</publishTime>
+    </File>
+    <File Include="assets/js/markdown/bootstrap-markdown.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/markdown/markdown.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/prettify.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/select2.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/spin.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/typeahead-bs2.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/x-editable/ace-editable.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="assets/js/x-editable/bootstrap-editable.min.js">
+      <publishTime>04/06/2014 16:27:58</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>10/01/2009 06:27:54</publishTime>
+    </File>
+    <File Include="bin/BarcodeLib.dll">
+      <publishTime>12/10/2014 18:58:18</publishTime>
+    </File>
+    <File Include="bin/DropDownCheckBoxes.dll">
+      <publishTime>03/09/2016 12:59:12</publishTime>
+    </File>
+    <File Include="bin/SchoolPRO.dll">
+      <publishTime>05/18/2017 12:27:27</publishTime>
+    </File>
+    <File Include="bin/TimePicker.dll">
+      <publishTime>05/24/2010 14:37:18</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>02/05/2017 14:33:52</publishTime>
+    </File>
+    <File Include="Default1.aspx">
+      <publishTime>04/06/2015 18:33:12</publishTime>
+    </File>
+    <File Include="Error.aspx">
+      <publishTime>09/01/2014 15:52:12</publishTime>
+    </File>
+    <File Include="forgotpassword.aspx">
+      <publishTime>10/17/2015 13:09:02</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/03/2014 20:13:10</publishTime>
+    </File>
+    <File Include="HostalBlock.aspx">
+      <publishTime>05/08/2015 12:55:44</publishTime>
+    </File>
+    <File Include="HostalFloor.aspx">
+      <publishTime>05/08/2015 12:55:56</publishTime>
+    </File>
+    <File Include="HostalStudentApply1.aspx">
+      <publishTime>05/08/2015 12:56:06</publishTime>
+    </File>
+    <File Include="Hostel.Master">
+      <publishTime>10/17/2015 13:09:02</publishTime>
+    </File>
+    <File Include="HostelStudentMarkLeave.aspx">
+      <publishTime>05/08/2015 12:56:16</publishTime>
+    </File>
+    <File Include="Library.Master">
+      <publishTime>10/17/2015 13:09:02</publishTime>
+    </File>
+    <File Include="LibraryMarkLeave.aspx">
+      <publishTime>05/08/2015 12:56:42</publishTime>
+    </File>
+    <File Include="Logout.aspx">
+      <publishTime>08/29/2014 12:57:28</publishTime>
+    </File>
+    <File Include="ManageHostal.aspx">
+      <publishTime>05/08/2015 12:56:56</publishTime>
+    </File>
+    <File Include="ManageHostalBed.aspx">
+      <publishTime>05/08/2015 12:57:06</publishTime>
+    </File>
+    <File Include="ManageHostalRoom.aspx">
+      <publishTime>05/08/2015 12:57:18</publishTime>
+    </File>
+    <File Include="NotAllowed.aspx">
+      <publishTime>11/05/2014 15:39:20</publishTime>
+    </File>
+    <File Include="package.config">
+      <publishTime>11/27/2014 09:23:40</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/09/2016 12:59:14</publishTime>
+    </File>
+    <File Include="Parent-Registration.aspx">
+      <publishTime>05/08/2015 14:58:28</publishTime>
+    </File>
+    <File Include="Parent.Master">
+      <publishTime>10/17/2015 13:09:02</publishTime>
+    </File>
+    <File Include="ParentChangePassword.aspx">
+      <publishTime>05/08/2015 15:19:22</publishTime>
+    </File>
+    <File Include="ParentDashBoard.aspx">
+      <publishTime>08/04/2015 11:39:42</publishTime>
+    </File>
+    <File Include="ParentProfile.aspx">
+      <publishTime>05/08/2015 13:00:46</publishTime>
+    </File>
+    <File Include="ParentRateTeacher.aspx">
+      <publishTime>05/08/2015 13:00:58</publishTime>
+    </File>
+    <File Include="ParentRegistration.aspx">
+      <publishTime>10/17/2015 13:09:02</publishTime>
+    </File>
+    <File Include="ParentSendMessage.aspx">
+      <publishTime>05/08/2015 13:03:52</publishTime>
+    </File>
+    <File Include="ParentsMarkLeave.aspx">
+      <publishTime>05/08/2015 13:04:02</publishTime>
+    </File>
+    <File Include="ParentsRegistrationNumber.aspx">
+      <publishTime>04/11/2015 20:29:00</publishTime>
+    </File>
+    <File Include="ParentsReplyToTeacherMessage.aspx">
+      <publishTime>05/08/2015 13:04:48</publishTime>
+    </File>
+    <File Include="ParentStudentEnrollment.aspx">
+      <publishTime>05/17/2015 16:14:42</publishTime>
+    </File>
+    <File Include="ParentsViewMessage.aspx">
+      <publishTime>05/08/2015 13:06:12</publishTime>
+    </File>
+    <File Include="ParentsViewRating.aspx">
+      <publishTime>05/08/2015 13:06:22</publishTime>
+    </File>
+    <File Include="ParentViewAssignmentRzlt.aspx">
+      <publishTime>05/08/2015 13:06:56</publishTime>
+    </File>
+    <File Include="ParentViewAttendance.aspx">
+      <publishTime>02/19/2015 16:29:52</publishTime>
+    </File>
+    <File Include="ParentViewAttendanceHistory.aspx">
+      <publishTime>05/08/2015 13:07:16</publishTime>
+    </File>
+    <File Include="ParentViewChildren.aspx">
+      <publishTime>09/03/2015 16:31:54</publishTime>
+    </File>
+    <File Include="ParentViewEvent.aspx">
+      <publishTime>05/08/2015 13:08:44</publishTime>
+    </File>
+    <File Include="ParentViewExamRzlt.aspx">
+      <publishTime>05/08/2015 13:08:54</publishTime>
+    </File>
+    <File Include="ParentViewFeeHistory.aspx">
+      <publishTime>05/08/2015 13:09:10</publishTime>
+    </File>
+    <File Include="ParentViewQuizRzlt.aspx">
+      <publishTime>05/08/2015 13:09:20</publishTime>
+    </File>
+    <File Include="ParentViewRating.aspx">
+      <publishTime>05/08/2015 13:09:30</publishTime>
+    </File>
+    <File Include="ParentViewResult.aspx">
+      <publishTime>05/08/2015 15:07:06</publishTime>
+    </File>
+    <File Include="ParentViewTeacher.aspx">
+      <publishTime>08/27/2015 13:59:40</publishTime>
+    </File>
+    <File Include="ParentView_First_Rzlt.aspx">
+      <publishTime>05/08/2015 13:06:32</publishTime>
+    </File>
+    <File Include="ParentView_Second_Rzlt.aspx">
+      <publishTime>05/08/2015 13:06:46</publishTime>
+    </File>
+    <File Include="PromoteStudent.aspx">
+      <publishTime>06/09/2016 11:27:04</publishTime>
+    </File>
+    <File Include="ResultNotAnnonced.aspx">
+      <publishTime>05/25/2015 10:00:40</publishTime>
+    </File>
+    <File Include="Student.Master">
+      <publishTime>01/21/2017 14:30:02</publishTime>
+    </File>
+    <File Include="StudentChangePassword.aspx">
+      <publishTime>05/08/2015 13:10:32</publishTime>
+    </File>
+    <File Include="StudentDashBoard.aspx">
+      <publishTime>05/08/2015 13:11:06</publishTime>
+    </File>
+    <File Include="StudentEventView.aspx">
+      <publishTime>05/08/2015 13:11:46</publishTime>
+    </File>
+    <File Include="StudentMarkLeave.aspx">
+      <publishTime>01/21/2017 14:35:40</publishTime>
+    </File>
+    <File Include="StudentProfile.aspx">
+      <publishTime>01/21/2017 14:30:23</publishTime>
+    </File>
+    <File Include="StudentPromotionHistory.aspx">
+      <publishTime>01/21/2017 14:30:32</publishTime>
+    </File>
+    <File Include="StudentRateTeacher.aspx">
+      <publishTime>01/21/2017 14:30:44</publishTime>
+    </File>
+    <File Include="StudentViewAssignmentRzlt.aspx">
+      <publishTime>01/21/2017 14:31:07</publishTime>
+    </File>
+    <File Include="StudentViewAttendance.aspx">
+      <publishTime>02/19/2015 16:23:42</publishTime>
+    </File>
+    <File Include="StudentViewAttendanceHistory.aspx">
+      <publishTime>01/23/2017 15:17:38</publishTime>
+    </File>
+    <File Include="StudentViewDetail.aspx">
+      <publishTime>01/21/2017 14:31:40</publishTime>
+    </File>
+    <File Include="StudentViewExamRzlt.aspx">
+      <publishTime>01/21/2017 14:31:47</publishTime>
+    </File>
+    <File Include="StudentViewQuizRzlt.aspx">
+      <publishTime>01/21/2017 14:31:55</publishTime>
+    </File>
+    <File Include="StudentViewResult.aspx">
+      <publishTime>05/08/2015 13:14:18</publishTime>
+    </File>
+    <File Include="StudentViewTeacher.aspx">
+      <publishTime>01/21/2017 14:34:08</publishTime>
+    </File>
+    <File Include="StudentViewTeacherRating.aspx">
+      <publishTime>01/21/2017 14:32:39</publishTime>
+    </File>
+    <File Include="StudentView_First_Rzlt.aspx">
+      <publishTime>01/21/2017 14:30:53</publishTime>
+    </File>
+    <File Include="StudentView_Second_Rzlt.aspx">
+      <publishTime>01/21/2017 14:31:00</publishTime>
+    </File>
+    <File Include="SuperAdmin/admin.Master">
+      <publishTime>05/08/2015 15:50:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/ChangePassword.aspx">
+      <publishTime>12/22/2014 16:15:28</publishTime>
+    </File>
+    <File Include="SuperAdmin/css/bootstrap.css">
+      <publishTime>11/04/2014 20:08:34</publishTime>
+    </File>
+    <File Include="SuperAdmin/css/bootstrap.min.css">
+      <publishTime>11/05/2014 12:15:46</publishTime>
+    </File>
+    <File Include="SuperAdmin/css/plugins/morris.css">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/css/sb-admin.css">
+      <publishTime>12/22/2014 16:13:38</publishTime>
+    </File>
+    <File Include="SuperAdmin/Farmecole.aspx">
+      <publishTime>03/14/2015 17:05:20</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/css/font-awesome.css">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/css/font-awesome.min.css">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/fonts/fontawesome-webfont.eot">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/fonts/fontawesome-webfont.svg">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/fonts/fontawesome-webfont.ttf">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/fonts/fontawesome-webfont.woff">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/fonts/FontAwesome.otf">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/less/bordered-pulled.less">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/less/core.less">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/less/fixed-width.less">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/less/font-awesome.less">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/less/icons.less">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/less/larger.less">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/less/list.less">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/less/mixins.less">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/less/path.less">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/less/rotated-flipped.less">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/less/spinning.less">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/less/stacked.less">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/less/variables.less">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/scss/font-awesome.scss">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/scss/_bordered-pulled.scss">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/scss/_core.scss">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/scss/_fixed-width.scss">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/scss/_icons.scss">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/scss/_larger.scss">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/scss/_list.scss">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/scss/_mixins.scss">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/scss/_path.scss">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/scss/_rotated-flipped.scss">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/scss/_spinning.scss">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/scss/_stacked.scss">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/font-awesome-4.1.0/scss/_variables.scss">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/js/bootstrap.js">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/js/bootstrap.min.js">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/js/jquery-1.11.0.js">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/js/plugins/flot/excanvas.min.js">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/js/plugins/flot/flot-data.js">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/js/plugins/flot/jquery.flot.js">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/js/plugins/flot/jquery.flot.pie.js">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/js/plugins/flot/jquery.flot.resize.js">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/js/plugins/flot/jquery.flot.tooltip.min.js">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/js/plugins/morris/morris-data.js">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/js/plugins/morris/morris.js">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/js/plugins/morris/morris.min.js">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/js/plugins/morris/raphael.min.js">
+      <publishTime>11/03/2014 19:34:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/ManageGroups.aspx">
+      <publishTime>05/13/2015 17:23:34</publishTime>
+    </File>
+    <File Include="SuperAdmin/ManagePages.aspx">
+      <publishTime>05/13/2015 12:34:56</publishTime>
+    </File>
+    <File Include="SuperAdmin/ManageUsers.aspx">
+      <publishTime>05/13/2015 17:11:52</publishTime>
+    </File>
+    <File Include="SuperAdmin/Profile.aspx">
+      <publishTime>11/19/2014 19:30:54</publishTime>
+    </File>
+    <File Include="Teacher.Master">
+      <publishTime>10/17/2015 13:09:02</publishTime>
+    </File>
+    <File Include="TeacherAcceptRejectLeave.aspx">
+      <publishTime>05/08/2015 13:14:46</publishTime>
+    </File>
+    <File Include="TeacherAddExamMarks.aspx">
+      <publishTime>02/05/2017 15:02:53</publishTime>
+    </File>
+    <File Include="TeacherAddQuizMarks.aspx">
+      <publishTime>05/08/2015 13:15:08</publishTime>
+    </File>
+    <File Include="TeacherAttendance.aspx">
+      <publishTime>05/08/2015 13:15:32</publishTime>
+    </File>
+    <File Include="TeacherChangePassword.aspx">
+      <publishTime>05/08/2015 13:15:42</publishTime>
+    </File>
+    <File Include="TeacherClassInchargeconformleave.aspx">
+      <publishTime>05/08/2015 13:15:50</publishTime>
+    </File>
+    <File Include="TeacherConformMarkLeave.aspx">
+      <publishTime>05/08/2015 13:16:00</publishTime>
+    </File>
+    <File Include="TeacherDashBoard.aspx">
+      <publishTime>05/08/2015 13:16:10</publishTime>
+    </File>
+    <File Include="TeacherLeaveRequestParents.aspx">
+      <publishTime>05/08/2015 13:16:20</publishTime>
+    </File>
+    <File Include="TeacherMarkLeave.aspx">
+      <publishTime>03/10/2018 19:02:39</publishTime>
+    </File>
+    <File Include="TeacherNewAdmissionMarks.aspx">
+      <publishTime>05/08/2015 13:16:46</publishTime>
+    </File>
+    <File Include="TeacherProfile.aspx">
+      <publishTime>05/08/2015 13:17:00</publishTime>
+    </File>
+    <File Include="TeacherPromoteStudent.aspx">
+      <publishTime>05/08/2015 13:17:12</publishTime>
+    </File>
+    <File Include="TeacherRateStudent.aspx">
+      <publishTime>05/08/2015 13:17:28</publishTime>
+    </File>
+    <File Include="TeacherRateStudents.aspx">
+      <publishTime>05/08/2015 13:17:38</publishTime>
+    </File>
+    <File Include="TeacherReplyMessage.aspx">
+      <publishTime>05/08/2015 13:17:48</publishTime>
+    </File>
+    <File Include="TeacherSendMessageAdmin.aspx">
+      <publishTime>05/08/2015 13:17:58</publishTime>
+    </File>
+    <File Include="TeacherSendMessageToReacher.aspx">
+      <publishTime>05/08/2015 13:18:08</publishTime>
+    </File>
+    <File Include="TeacherStudentAttendance.aspx">
+      <publishTime>01/31/2017 22:22:57</publishTime>
+    </File>
+    <File Include="TeacherStudentTask.aspx">
+      <publishTime>09/03/2015 12:36:10</publishTime>
+    </File>
+    <File Include="TeacherTakeAttendance.aspx">
+      <publishTime>05/08/2015 17:36:44</publishTime>
+    </File>
+    <File Include="TeacherViewDiary.aspx">
+      <publishTime>10/05/2015 17:01:22</publishTime>
+    </File>
+    <File Include="TeacherViewEvent.aspx">
+      <publishTime>05/24/2015 20:14:56</publishTime>
+    </File>
+    <File Include="TeacherViewMessage.aspx">
+      <publishTime>05/08/2015 13:20:10</publishTime>
+    </File>
+    <File Include="TeacherViewRating.aspx">
+      <publishTime>05/08/2015 18:59:58</publishTime>
+    </File>
+    <File Include="TeacherviewSchedule.aspx">
+      <publishTime>05/12/2015 16:46:28</publishTime>
+    </File>
+    <File Include="TeacherviewStudents.aspx">
+      <publishTime>05/08/2015 13:21:30</publishTime>
+    </File>
+    <File Include="testchallanpage.aspx">
+      <publishTime>03/12/2016 15:07:34</publishTime>
+    </File>
+    <File Include="TESTINF1.xsc">
+      <publishTime>03/11/2015 17:19:34</publishTime>
+    </File>
+    <File Include="TESTINF1.xss">
+      <publishTime>03/11/2015 17:19:34</publishTime>
+    </File>
+    <File Include="testTimeTable.aspx">
+      <publishTime>05/18/2015 18:21:52</publishTime>
+    </File>
+    <File Include="TransferStudent.aspx">
+      <publishTime>06/09/2016 11:28:42</publishTime>
+    </File>
+    <File Include="Uploaded-Files/005996.jpg">
+      <publishTime>04/24/2014 09:42:06</publishTime>
+    </File>
+    <File Include="Uploaded-Files/1.png">
+      <publishTime>04/24/2014 09:29:56</publishTime>
+    </File>
+    <File Include="Uploaded-Files/10153492_10202248609437378_2091432649_n.jpg">
+      <publishTime>06/21/2014 16:33:58</publishTime>
+    </File>
+    <File Include="Uploaded-Files/10154169_830053670347694_7326807864847836813_n.jpg">
+      <publishTime>07/04/2014 01:45:34</publishTime>
+    </File>
+    <File Include="Uploaded-Files/10268331_515879368534566_698110760_n.jpg">
+      <publishTime>05/18/2014 20:41:58</publishTime>
+    </File>
+    <File Include="Uploaded-Files/10275978_10202133909249945_3558075952697924471_n.jpg">
+      <publishTime>05/22/2014 12:20:20</publishTime>
+    </File>
+    <File Include="Uploaded-Files/10317644_814069151945393_5554518117060860604_o.jpg">
+      <publishTime>08/11/2014 12:32:48</publishTime>
+    </File>
+    <File Include="Uploaded-Files/10362938_311433815679631_600859795_n.jpg">
+      <publishTime>05/21/2014 15:26:14</publishTime>
+    </File>
+    <File Include="Uploaded-Files/10364159_311433799012966_665748857_n.jpg">
+      <publishTime>05/21/2014 15:22:48</publishTime>
+    </File>
+    <File Include="Uploaded-Files/10409826_311433842346295_2012575615_n.jpg">
+      <publishTime>05/22/2014 12:19:46</publishTime>
+    </File>
+    <File Include="Uploaded-Files/10410866_10152639999284433_8199649769473187191_n.jpg">
+      <publishTime>08/11/2014 12:49:40</publishTime>
+    </File>
+    <File Include="Uploaded-Files/10478132-login-icon.jpg">
+      <publishTime>09/03/2014 12:41:48</publishTime>
+    </File>
+    <File Include="Uploaded-Files/10526041_797295703634529_7201894076075761930_n.jpg">
+      <publishTime>08/11/2014 13:26:54</publishTime>
+    </File>
+    <File Include="Uploaded-Files/122.PNG">
+      <publishTime>08/29/2014 13:04:54</publishTime>
+    </File>
+    <File Include="Uploaded-Files/12222.JPG">
+      <publishTime>08/29/2014 13:05:36</publishTime>
+    </File>
+    <File Include="Uploaded-Files/1381778_579787795415009_814061167_n.png">
+      <publishTime>08/11/2014 15:15:20</publishTime>
+    </File>
+    <File Include="Uploaded-Files/1463984_748714445143298_851279890_n.jpg">
+      <publishTime>07/04/2014 01:45:34</publishTime>
+    </File>
+    <File Include="Uploaded-Files/1517704_851047771590227_6455694231590463440_n.jpg">
+      <publishTime>07/02/2014 13:36:24</publishTime>
+    </File>
+    <File Include="Uploaded-Files/1521837_681500218562137_1874837879_n.png">
+      <publishTime>06/21/2014 16:22:44</publishTime>
+    </File>
+    <File Include="Uploaded-Files/1613941_728970590457356_7148743802719540563_n.jpg">
+      <publishTime>04/17/2014 16:42:52</publishTime>
+    </File>
+    <File Include="Uploaded-Files/1625653_247397248774624_2085385980_n.png">
+      <publishTime>06/21/2014 16:28:04</publishTime>
+    </File>
+    <File Include="Uploaded-Files/1655050_277677265721953_531170029_a.jpg">
+      <publishTime>06/21/2014 16:22:44</publishTime>
+    </File>
+    <File Include="Uploaded-Files/1957456_10201765731325727_472850475_n.jpg">
+      <publishTime>05/22/2014 12:17:02</publishTime>
+    </File>
+    <File Include="Uploaded-Files/1957889_857023720979036_627781192422022387_o.jpg">
+      <publishTime>08/11/2014 13:28:36</publishTime>
+    </File>
+    <File Include="Uploaded-Files/1959307_728971467123935_716963931707601282_n.jpg">
+      <publishTime>06/21/2014 15:31:46</publishTime>
+    </File>
+    <File Include="Uploaded-Files/2.png">
+      <publishTime>04/24/2014 09:38:34</publishTime>
+    </File>
+    <File Include="Uploaded-Files/21212.jpg">
+      <publishTime>08/11/2014 12:44:14</publishTime>
+    </File>
+    <File Include="Uploaded-Files/271807_257256394289108_7504716_o.jpg">
+      <publishTime>05/25/2014 18:30:58</publishTime>
+    </File>
+    <File Include="Uploaded-Files/2b.png">
+      <publishTime>09/01/2014 19:04:16</publishTime>
+    </File>
+    <File Include="Uploaded-Files/AccessControl-hand-new.jpg">
+      <publishTime>04/24/2014 09:40:00</publishTime>
+    </File>
+    <File Include="Uploaded-Files/Capture.PNG">
+      <publishTime>08/31/2014 22:38:56</publishTime>
+    </File>
+    <File Include="Uploaded-Files/Cross.gif">
+      <publishTime>09/11/2014 20:13:46</publishTime>
+    </File>
+    <File Include="Uploaded-Files/Employee.jpg">
+      <publishTime>09/12/2014 17:55:32</publishTime>
+    </File>
+    <File Include="Uploaded-Files/female.jpg">
+      <publishTime>09/11/2014 19:27:02</publishTime>
+    </File>
+    <File Include="Uploaded-Files/Image0014.jpg">
+      <publishTime>08/11/2014 15:17:10</publishTime>
+    </File>
+    <File Include="Uploaded-Files/images.jpg">
+      <publishTime>04/24/2014 09:23:46</publishTime>
+    </File>
+    <File Include="Uploaded-Files/IMG_20131205_201730.jpg">
+      <publishTime>05/20/2014 11:09:28</publishTime>
+    </File>
+    <File Include="Uploaded-Files/IMG_20140105_212120.jpg">
+      <publishTime>05/20/2014 11:05:32</publishTime>
+    </File>
+    <File Include="Uploaded-Files/login.png">
+      <publishTime>08/29/2014 13:41:46</publishTime>
+    </File>
+    <File Include="Uploaded-Files/lr1_large.png">
+      <publishTime>05/18/2014 19:56:06</publishTime>
+    </File>
+    <File Include="Uploaded-Files/male.jpg">
+      <publishTime>09/11/2014 19:27:02</publishTime>
+    </File>
+    <File Include="Uploaded-Files/metro.gif">
+      <publishTime>10/02/2014 13:37:42</publishTime>
+    </File>
+    <File Include="Uploaded-Files/Photo0001.jpg">
+      <publishTime>05/28/2014 11:35:16</publishTime>
+    </File>
+    <File Include="Uploaded-Files/Photo0370.jpg">
+      <publishTime>06/02/2014 18:16:42</publishTime>
+    </File>
+    <File Include="Uploaded-Files/Photo0393.jpg">
+      <publishTime>06/02/2014 16:59:30</publishTime>
+    </File>
+    <File Include="Uploaded-Files/sale-logo.png">
+      <publishTime>08/31/2014 22:30:16</publishTime>
+    </File>
+    <File Include="Uploaded-Files/teacher.jpg">
+      <publishTime>09/13/2014 19:34:12</publishTime>
+    </File>
+    <File Include="Uploaded-Files/TransParentDayLogo.jpg">
+      <publishTime>09/11/2014 19:34:32</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/18/2017 12:27:41</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

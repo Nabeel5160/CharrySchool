@@ -1,0 +1,52 @@
+C:\Users\Sundus\Desktop\CompleteBarCode\WebApplication\WebBarCode\BarcodeLib\bin\Debug\BarcodeLib.dll
+C:\Users\Sundus\Desktop\CompleteBarCode\WebApplication\WebBarCode\BarcodeLib\bin\Debug\BarcodeLib.pdb
+C:\Users\Sundus\Desktop\CompleteBarCode\WebApplication\WebBarCode\BarcodeLib\obj\Debug\BarcodeLib.dll
+C:\Users\Sundus\Desktop\CompleteBarCode\WebApplication\WebBarCode\BarcodeLib\obj\Debug\BarcodeLib.pdb
+H:\abduljabar\BarcodeLib\bin\Debug\BarcodeLib.dll
+H:\abduljabar\BarcodeLib\bin\Debug\BarcodeLib.pdb
+H:\abduljabar\BarcodeLib\obj\Debug\ResolveAssemblyReference.cache
+H:\abduljabar\BarcodeLib\obj\Debug\BarcodeLib.dll
+H:\abduljabar\BarcodeLib\obj\Debug\BarcodeLib.pdb
+G:\Blog Work\AlFaisalUniForm\InventoryMS\AlFaisalIMS\BarcodeLib\bin\Debug\BarcodeLib.dll
+G:\Blog Work\AlFaisalUniForm\InventoryMS\AlFaisalIMS\BarcodeLib\bin\Debug\BarcodeLib.pdb
+G:\Blog Work\AlFaisalUniForm\InventoryMS\AlFaisalIMS\BarcodeLib\obj\Debug\ResolveAssemblyReference.cache
+G:\Blog Work\AlFaisalUniForm\InventoryMS\AlFaisalIMS\BarcodeLib\obj\Debug\BarcodeLib.dll
+G:\Blog Work\AlFaisalUniForm\InventoryMS\AlFaisalIMS\BarcodeLib\obj\Debug\BarcodeLib.pdb
+C:\Users\Bilal\documents\visual studio 2012\Projects\BarcodeLib\bin\Debug\BarcodeLib.dll
+C:\Users\Bilal\documents\visual studio 2012\Projects\BarcodeLib\bin\Debug\BarcodeLib.pdb
+C:\Users\Bilal\documents\visual studio 2012\Projects\BarcodeLib\obj\Debug\BarcodeLib.dll
+C:\Users\Bilal\documents\visual studio 2012\Projects\BarcodeLib\obj\Debug\BarcodeLib.pdb
+E:\.net projects\inventory complete amir b\BarcodeLib\bin\Debug\BarcodeLib.dll
+E:\.net projects\inventory complete amir b\BarcodeLib\bin\Debug\BarcodeLib.pdb
+E:\.net projects\inventory complete amir b\BarcodeLib\obj\Debug\BarcodeLib.csprojResolveAssemblyReference.cache
+E:\.net projects\inventory complete amir b\BarcodeLib\obj\Debug\BarcodeLib.dll
+E:\.net projects\inventory complete amir b\BarcodeLib\obj\Debug\BarcodeLib.pdb
+C:\Users\haris\Desktop\Amir Bhai\inventory complete amir b\BarcodeLib\bin\Debug\BarcodeLib.dll
+C:\Users\haris\Desktop\Amir Bhai\inventory complete amir b\BarcodeLib\bin\Debug\BarcodeLib.pdb
+C:\Users\haris\Desktop\Amir Bhai\inventory complete amir b\BarcodeLib\obj\Debug\BarcodeLib.csprojResolveAssemblyReference.cache
+C:\Users\haris\Desktop\Amir Bhai\inventory complete amir b\BarcodeLib\obj\Debug\BarcodeLib.dll
+C:\Users\haris\Desktop\Amir Bhai\inventory complete amir b\BarcodeLib\obj\Debug\BarcodeLib.pdb
+C:\Users\Tech\Desktop\Current Working With\retailms\RETAILMS\RETAILMS\BarcodeLib\bin\Debug\BarcodeLib.dll
+C:\Users\Tech\Desktop\Current Working With\retailms\RETAILMS\RETAILMS\BarcodeLib\bin\Debug\BarcodeLib.pdb
+C:\Users\Tech\Desktop\Current Working With\retailms\RETAILMS\RETAILMS\BarcodeLib\obj\Debug\BarcodeLib.csprojResolveAssemblyReference.cache
+C:\Users\Tech\Desktop\Current Working With\retailms\RETAILMS\RETAILMS\BarcodeLib\obj\Debug\BarcodeLib.dll
+C:\Users\Tech\Desktop\Current Working With\retailms\RETAILMS\RETAILMS\BarcodeLib\obj\Debug\BarcodeLib.pdb
+D:\Working\retailms\RETAILMS\RETAILMS\BarcodeLib\bin\Debug\BarcodeLib.dll
+D:\Working\retailms\RETAILMS\RETAILMS\BarcodeLib\bin\Debug\BarcodeLib.pdb
+D:\Working\retailms\RETAILMS\RETAILMS\BarcodeLib\obj\Debug\BarcodeLib.csprojResolveAssemblyReference.cache
+D:\Working\retailms\RETAILMS\RETAILMS\BarcodeLib\obj\Debug\BarcodeLib.dll
+D:\Working\retailms\RETAILMS\RETAILMS\BarcodeLib\obj\Debug\BarcodeLib.pdb
+E:\running projects\SchoolPRO\SchoolPRO\BarcodeLib\bin\Debug\BarcodeLib.dll
+E:\running projects\SchoolPRO\SchoolPRO\BarcodeLib\bin\Debug\BarcodeLib.pdb
+E:\running projects\SchoolPRO\SchoolPRO\BarcodeLib\obj\Debug\BarcodeLib.dll
+E:\running projects\SchoolPRO\SchoolPRO\BarcodeLib\obj\Debug\BarcodeLib.pdb
+E:\running projects\al saddique\SchoolPRO\SchoolPRO\BarcodeLib\bin\Debug\BarcodeLib.dll
+E:\running projects\al saddique\SchoolPRO\SchoolPRO\BarcodeLib\bin\Debug\BarcodeLib.pdb
+E:\running projects\al saddique\SchoolPRO\SchoolPRO\BarcodeLib\obj\Debug\BarcodeLib.csprojResolveAssemblyReference.cache
+E:\running projects\al saddique\SchoolPRO\SchoolPRO\BarcodeLib\obj\Debug\BarcodeLib.dll
+E:\running projects\al saddique\SchoolPRO\SchoolPRO\BarcodeLib\obj\Debug\BarcodeLib.pdb
+E:\running projects\heaven school solution\running Schools\care school\SchoolPRO\SchoolPRO\BarcodeLib\bin\Debug\BarcodeLib.dll
+E:\running projects\heaven school solution\running Schools\care school\SchoolPRO\SchoolPRO\BarcodeLib\bin\Debug\BarcodeLib.pdb
+E:\running projects\heaven school solution\running Schools\care school\SchoolPRO\SchoolPRO\BarcodeLib\obj\Debug\BarcodeLib.csprojResolveAssemblyReference.cache
+E:\running projects\heaven school solution\running Schools\care school\SchoolPRO\SchoolPRO\BarcodeLib\obj\Debug\BarcodeLib.dll
+E:\running projects\heaven school solution\running Schools\care school\SchoolPRO\SchoolPRO\BarcodeLib\obj\Debug\BarcodeLib.pdb
